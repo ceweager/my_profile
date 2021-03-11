@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300&family=Vollkorn&display=swap');
 
 body {
-  background-color: #1f5f8b;
+  background-color: #1a1a2e;
+  background-image: url('https://i.natgeofe.com/n/1edad4f5-6a8d-4a4f-becc-bdbc7a99c9fd/01-starstruck-spica-051616.jpg');
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   color: #d2ecf9;
   letter-spacing: 2px;
@@ -9,35 +13,87 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 24px; 
+  margin:0;
+  padding:0;
 }
 
 h1{
   font-size: 40px;
   font-family: 'DotGothic16', sans-serif;
-  line-height: 48px;
+  line-height: 100px;
+  margin-bottom: 10px;
 }
 
 h2{
+  font-size: 28px;
   font-family: 'Vollkorn', serif;
   color:#1891ac;
+  margin-bottom: 32px;
 }
+
+h3{
+  margin:0;
+  padding:0;
+}
+
+/* Navigation */
+nav{
+  position:fixed;
+  background-color: #162447;
+  height:50px;
+  width: 100%;
+  margin:0;
+  top: 0;
+}
+
+.nav-container{
+  position:relative;
+  padding: 12px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.left-nav{
+  margin:auto;
+  vertical-align: middle;
+}
+
+.right-nav{
+  position:absolute;
+  margin:auto;
+  vertical-align: middle;
+  right:0px;
+}
+
+/* banner */
+.banner{
+  height:920px;
+}
+
+.banner-container{
+  width: 750px;
+  height: 100%;
+  margin: 0 auto;
+  padding:14%;
+}
+
+/* containers */
 
 .container{
   margin: 0 auto;
-  padding:42px 0px 0px;
-  width: 800px;
+  width: 850px;
 }
 
 .card-blue{
   padding: 30px 40px;
-  margin: 32px;
+  margin: 32px 0;
   height: 100%;
   border-radius:8px;
   background-color: #253b6e;
 }
 
 .profile-avi{
-  width:140px;
+  width:180px;
   margin: 16px;
 }
 
@@ -49,8 +105,43 @@ h2{
   text-align:center;
 }
 
+.text-left{
+  text-align: left; 
+}
+
+.position-left{
+  position:left;
+}
+
+.big-hr{
+  margin: 16px auto 32px;
+  width:40%;
+  color:#d2ecf9;
+}
+
+.small-hr{
+  margin: 5px 8px;
+  width: 90%;
+  color:#d2ecf9;
+}
+
 .img-circle{
-  border-radius:50%;
+  border-radius:15%;
+}
+
+.big-pic{
+  font-size: 40px;
+  margin: 8px 24px 10px 24px;
+}
+
+.med-pic{
+  font-size: 24px;
+  margin-top:2px;
+  margin-right: 12px;
+}
+
+.inline-block{
+  display:inline-block;
 }
 
 .shadowed{
@@ -74,13 +165,14 @@ h2{
 
 ul{
   list-style: none;
-  margin: 0;
+  margin: 14px 0 0;
   padding: 0;
+  vertical-align: top;
 }
 
+
 li{
-  display: inline-block;
-  margin: 24px 8px 0px;
+  margin: 8px 8px 0px;
   border-radius: 5px;
 }
 
@@ -104,16 +196,33 @@ a:hover{
   .container {
     width: 700px;
   }
+
+  .banner-container{
+    width:500px;
+  }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 450px;
   }
+
+  .banner-container{
+    width:350px;
+  }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 350px;
+  }
+
+  .banner-container{
+    width:250px;
+  }
+  .h1{
+    font-size: 32px;
+    line-height: 10px;
+    padding: 0;
   }
 }
